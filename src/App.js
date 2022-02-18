@@ -9,21 +9,22 @@ import Contact from './Contact';
 import Service from './Service';
 import Navbar from './Navbar';
 import './index.css';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
-  return(
-    <>
-     <Navbar />
-     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/service' element={<Service />} />
-      <Route path="*" element={<Home />} />
-     </Routes>
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/home' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/service' element={<Service />} />
+                <Route path="*" element={<Home />} />
+            </Routes>
+        </>
+    );
 };
 
 export default App;
