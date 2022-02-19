@@ -1,17 +1,25 @@
 import React from 'react';
+import Common from './Common';
+import wev from "../src/img/home.jpg";
 
 const Home = () => {
-    return(
-        <>
-        <h1>Hello, I am Home.js</h1>
-        </>
-    );
+  return(
+      <>
+      <Common 
+      name='Grow your business with'
+      visit= './service'
+      btn='Service'
+      imgsrc={wev}
+      />
+
+      </>
+  );
 };
 
 export default Home
 
+// Grow your business with <strong className='brand-name'> Sumit</strong>
 
-
-/*
-err mean error, if you did something wrong then it will throw error and fluffy is your kitten name if you are using mongoose documentation
-*/
+// <NavLink to="/service" className="btn-get-started">
+// Get Started
+// </NavLink>
