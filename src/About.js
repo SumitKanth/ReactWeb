@@ -8,7 +8,7 @@ const About = () => {
     return(
         <Common 
       name='Welcome to your about page'
-      visit= './contact'
+      visit= '/contact'
       btn='Contact Us'
       imgsrc={wev}
       />
@@ -17,10 +17,3 @@ const About = () => {
 };
 
 export default About 
-
-
-// Welcome to your about page <strong className='brand-name'> Sumit</strong>
-
-// <NavLink to="/contact" className="btn-get-started">
-//                     Contact Us
-//                   </NavLink>

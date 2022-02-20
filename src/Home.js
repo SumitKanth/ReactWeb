@@ -7,7 +7,7 @@ const Home = () => {
       <>
       <Common 
       name='Grow your business with'
-      visit= './service'
+      visit= '/service'
       btn='Service'
       imgsrc={wev}
       />
@@ -17,9 +17,3 @@ const Home = () => {
 };
 
 export default Home
-
-// Grow your business with <strong className='brand-name'> Sumit</strong>
-
-// <NavLink to="/service" className="btn-get-started">
-// Get Started
-// </NavLink>

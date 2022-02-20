@@ -1,11 +1,33 @@
-import React from 'react';
+import React from "react";
+import Card from './card';
+import Sdata from "./Sdata";
 
 const Service = () => {
-    return(
-        <>
-        <h1>Hello, I am Service.js</h1>
-        </>
-    );
+  return (
+    <>
+    <div className="my-5">
+        <h1 className="text-center">Our Services</h1>
+      </div>
+      <div className="container-fluid mb-5">
+        <div className="row">
+          <div className="col-10 mx-auto">
+            <div className="row gy-4">
+             {Sdata.map((e, i) => {
+                 return(
+                    <Card 
+                    imgsrc={e.srcimg}
+                    cardTitle={e.title}
+                    key={i}
+                />
+                 )
+                
+             })} 
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
-export default Service
+export default Service;
