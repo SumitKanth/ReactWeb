@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Service from './Service';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import './index.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path='/service' element={<Service />} />
                 <Route path="*" element={<Home />} />
             </Routes>
+            <Footer />
         </>
     );
 };
